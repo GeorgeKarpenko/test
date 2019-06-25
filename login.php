@@ -14,7 +14,7 @@ if(isset($_POST['name']))
     foreach ($result as $value) {
         setcookie("name",$value['name']);
         setcookie("password",$value['password']);
-        header('Location: http://test.loc/applications.php');
+        header('Location: /applications.php');
         exit;
     };
     // закрываем подключение

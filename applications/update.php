@@ -1,6 +1,6 @@
 <?php
 if($_COOKIE['name'] == ''){
-    header('Location: http://test.loc/login.php');
+    header('Location: /login.php');
     exit;
 }
 $name = $_COOKIE['name'];
@@ -22,7 +22,7 @@ if($result)
    
 }
 else{
-    header('Location: http://test.loc/login.php');
+    header('Location: /login.php');
     exit;
 }
 

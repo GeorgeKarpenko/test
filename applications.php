@@ -1,6 +1,6 @@
 <?php
 if($_COOKIE['name'] == ''){
-    header('Location: http://test.loc/login.php');
+    header('Location: /login.php');
     exit;
 }
 $name = $_COOKIE['name'];
@@ -27,7 +27,7 @@ if($res)
     
 }
 else{
-    header('Location: http://test.loc/exit.php');
+    header('Location: /exit.php');
     exit;
 }
 // закрываем подключение
