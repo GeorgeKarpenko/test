@@ -15,6 +15,7 @@ $query = "SELECT * FROM `user` WHERE `name` = '$name' AND `password` = '$passwor
 $result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link));
 if($result)
 {
+    $id = $_GET['id'];
     // выполняем операции с базой данных
     $query = "SELECT * FROM `applications` WHERE  `id` = $id";
     $result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link)); 
